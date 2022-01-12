@@ -1,3 +1,7 @@
+
+# Shell scripts
+*.sh
+
 # Prerequisites
 *.d
 
