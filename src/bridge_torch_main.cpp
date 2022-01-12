@@ -1,4 +1,4 @@
-/* bridge_torch_main.c */
+/* bridge_torch_main.cpp */
 /* Author: Xiaolong Huang */
 
 #include <iostream>
