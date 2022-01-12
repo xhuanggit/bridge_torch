@@ -2,20 +2,20 @@
 
 ## Description
 
-Multiple hikers cross a series of narrow bridges at various speeds. Each bridge can only hold at most 2 hikers at one time. When 2 hikers cross the bridge together, they must move at the slower hiker's pace. There is 1 torch that has to be used when crossing the bridge.
+Multiple hikers cross a series of narrow bridges at various speeds. Each bridge can only hold at most 2 hikers at one time. When 2 hikers cross the bridge together, they must move at the slower hiker's speed. There is 1 torch that has to be used when crossing the bridge.
 
 More hikers can join the team at farther bridges. One needs to find the minimal total crossing time.
 
-The input is given in yaml file including hiker speeds and starting bridges and bridge lengths.
+The input is given in a yaml file including hiker speeds, starting bridges and bridge lengths.
 
 ## Strategy
 
 Since the torch needs to be used, when 2 hikers cross, 1 hiker has to come back to pass the torch. Consider a simple case with 4 hikers a, b, c and d crossing one bridge, where the hiker speeds are sorted in descending order. There are in general two ways to cross:
 
-Arrangement 1: ab, a, ac, a, ad; where hiker a always carries back the torch;
+Arrangement 1: ab, a, ac, a, ad; where hiker a always carries back the torch;\
 Total time: Forward: T(b)+T(c)+T(d), Backward: T(a)\*2;
 
-Arrangement 2: ab, a, cd, b, ab; where hikers a and b alternatively carry back the torch;
+Arrangement 2: ab, a, cd, b, ab; where hikers a and b alternatively carry back the torch;\
 Total time: Forward: T(b)\*2+T(d), Backward: T(a)+T(b);
 
 To compare the two ways of crossing is actually to compare T(a)+T(c) and T(b)\*2.
@@ -34,6 +34,4 @@ To compile, in root directory one can use e.g. g++:
 
 g++ -o bridge_torch_prog src/bridge_torch_main.cpp -I. -lyaml-cpp -Lyaml-cpp
 
-The default input file is input/input.yaml. One additional argument can be given as the suffix of the filename, e.g. input/inputxhyb.yaml. Several test inputs are also given.
-
-
+The default input file is input/input.yaml. One additional argument can be given as the suffix of the filename, e.g. xhyb for input/inputxhyb.yaml. Several test inputs are also given.
