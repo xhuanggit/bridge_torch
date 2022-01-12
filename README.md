@@ -35,3 +35,16 @@ To compile, in root directory one can use e.g. g++:
 g++ -o bridge_torch_prog src/bridge_torch_main.cpp -I. -lyaml-cpp -Lyaml-cpp
 
 The default input file is input/input.yaml. One additional argument can be given as the suffix of the filename, e.g. xhyb for input/inputxhyb.yaml. Several test inputs are also given.
+
+Test results:
+<pre>
+Filename suffix		Time (minutes)\
+None				245\
+1h1b				4\
+2h1b				2\
+3h1b				7\
+4h1b1				15\
+4h1b2				18\
+5h1b				20\
+5h2b				39\
+</pre>
