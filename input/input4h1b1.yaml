@@ -1,0 +1,20 @@
+hikers:
+  -
+    name: A
+    startBridge: 0
+    speed: 1
+  -
+    name: B
+    startBridge: 0
+    speed: 4
+  -
+    name: C
+    startBridge: 0
+    speed: 8
+  -
+    name: D
+    startBridge: 0
+    speed: 2
+
+bridgeLengths:
+  - 8
