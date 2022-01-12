@@ -38,7 +38,7 @@ The default input file is input/input.yaml. One additional argument can be given
 
 Test results:
 <pre>
-Input file suffix		Time (minutes)
+Input file suffix	Time (minutes)
 None			245
 1h1b			4
 2h1b			2
